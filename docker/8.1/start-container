@@ -9,7 +9,7 @@ if [ ! -d /.composer ]; then
 fi
 
 chmod -R ugo+rw /.composer
-chmod -R 755 storage
+chmod -R 777 storage
 
 if [ $# -gt 0 ]; then
     exec gosu $WWWUSER "$@"
