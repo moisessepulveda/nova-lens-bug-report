@@ -27,7 +27,7 @@ Then we will install dependencies
 
 
 ```shell
-> composer install
+> composer install&&php artisan migrate --seed
 ```
 
 
@@ -37,3 +37,8 @@ Finally open localhost on your brower
 ```shell
 http://localhost
 ```
+
+login with:
+- user: admin@admin.com
+- password: adminadmin
+
